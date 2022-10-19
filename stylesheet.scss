@@ -1,4 +1,87 @@
+$main-text-color: rgb(77, 99, 70);
+$button-color: rgb(188, 198, 186);
+$font-style: bold;
+
+@mixin font-styling {
+    color: $main-text-color; 
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+}
+
 body {
     margin: 0;
-    background-color: (188, 198, 186)
+    background-color: rgb(188, 198, 186);
+    font-family: sans-serif;
+    font-weight: 200;
 }
+.left-side {
+    display: flex;
+    border-radius: 10px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250, 252, 248);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: fixed;
+    text-align: center;
+    width: 100%;
+    hieght: 15%;
+}
+
+#email {
+    @include font-styling;
+}
+
+#password {
+    @include font-styling;
+}
+
+#remeber {
+    @include font-styling;
+}
+
+.forgot-password {
+    padding: 10px;
+    text-decoration: none;
+}
+
+#signin {
+    background-color: $main-text-color;
+    color: $button-color;
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-color: $button-color;
+    border: 10px;
+    border-radius: 5px;
+    padding: 8px;
+    transform: translateX(0%);
+    margin: 0;
+}
+
+.signup {
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+/*Small Devices */
+@media screen and (max-width 600px) {
+    #footer {
+    display: none;
+    }
+}
+
+/* Medium Devices */
+@media screen and (min-width: 800px) {
+    #footer {
+        width: 100%;
+        height: 10%;
+    }
+}
+
+/* Computers */
+
