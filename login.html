@@ -13,26 +13,26 @@
     <!--Left Side-->
     
     <!--Header-->
-    <header>
-    <link href="./img/user-icon.svg" rel="user icon" alt="user icon"><cite><!--1--></cite>
+    <!-- <header id="header">
         <h2>Untitled UI</h2>
-    </header>
+    </header> -->
     <!--End Header-->
 
     <!--Links-->
     <section class="left-side">
-        <div class="containter-main">
-        <title>Welcome Baack</title>
+        <div>
+        <a href="./img/user-icon.svg" rel="user icon" alt="user icon"><!--1--></a>
+        <h3>Welcome Back</h3><br>
         <h4>Please enter your details.</h4>
         <form>
             <!--Email input-->
-            <label for="email"><b>Email</b></label><br>
+            <label for="email" style="margin-left: 7%;" class="details">Email</label><br>
             <input type="text" id="email" name="email"><br>
             <!--Password input-->
-            <label for="password"><b>Password</b></label><br>
+            <label for="password" style="margin-left: 7%;" class="details">Password</label><br>
             <input type="password" id="password" name="password"><br>
             <!--Remember me/forgot password link-->
-            <imput type="checkbox"><b>Remember for 30 days</b></imput>
+            <imput type="checkbox" class="remember">Remember for 30 days</imput>
             <label for="remember" id="remember" name="remember"></label>
             <link href="/" class="forgot-password">Forgot password</link>
             <br>
@@ -40,15 +40,15 @@
             <button type="button" id="signin">Sign In</button>
             <br>
             <!--Sign up-->
-            <b class="signup">Don't have an account?</b> <link href="/" alt="Sign Up">Sign Up</link>
+            <div class="noaccount">Don't have an account? <link href="/" alt="Sign Up" class="signup">Sign Up</link></div>
         </form>
         </div>
     <!--End Links-->
 
         <!--Footer-->
-        <footer id="footer">
-            <p>© Untitled UI 2022</p>
-        </footer>
+        <!-- <footer> -->
+            <!-- <p id="footer">© Untitled UI 2022</p>
+        </footer> -->
         <!--End Footer-->
     </section>
     <!--End Left Side-->
